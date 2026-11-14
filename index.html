@@ -617,6 +617,17 @@
       });
     });
   })();
+</script> <script>
+  // Cek apakah halaman dibuka di tab terpisah (bukan di dalam iframe Lumi)
+  if (window.self === window.top) {
+    // Sesuaikan dengan class tombol "Kembali ke Lembar Kerja" Anda
+    const tombolKembali = document.querySelector('.btn-kembali-lk, a[href*="#lk"]'); 
+    
+    if (tombolKembali) {
+      tombolKembali.style.display = 'none';
+    }
+  }
 </script>
+ 
 </body>
 </html>
